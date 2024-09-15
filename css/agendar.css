@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', "Sans-Serif";
+    line-height: 1.6;
+    color: #222;
+}
+
+
+html {
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+
+
+/* Contenedor general */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header Section */
+.header-section {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header-content .a{
+    display: inline-block; /* Limita el área clickeable solo al tamaño de la imagen */
+    text-decoration: none; /* Elimina el subrayado (aunque no es necesario para una imagen, es una buena práctica) */
+    
+
+}
+
+.logo {
+    display: block; /* Asegura que la imagen ocupe todo el espacio dentro del enlace */
+    height: auto; 
+    display: block;
+    width: 160px;
+    margin-left: 70px ;
+    /*  */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #2F6690;
+}
+
+.nav-links a {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3A7CA5 ;
+}
+
+
+/* Titulo */
+
+.titulo{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.titulo h1{
+    font-size: 2rem;
+    color: #111;
+}
+
+
+/* Footer */
+.footer-section {
+    margin-top: 50px;
+    background-color: #2F6690  ;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0 20px 0;
+    height: 100%;
+}
+
+footer .footer-pt1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 120px;
+    padding-bottom: 60px;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.479);
+}
+
+.footer-pt1 .contacto{
+    text-align: start;
+    width: 100%;
+    
+}
+.footer-pt1 .contacto span{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.footer-pt1 .contacto i{
+    font-size: 1.4rem;
+    padding-right: 15px;
+}
+
+.footer-pt1 .contacto p{
+    font-size: 1.1rem;
+}
+
+.footer-pt1 .contacto a{
+    text-decoration:underline;
+    color: white;
+}
+
+.derechos{
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+@media (max-width: 860px){
+
+    .header-section {
+        background-color: #fff;
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #dddddd;
+        position: sticky;
+        z-index: 1000;
+        top: 0px;
+    
+    }
+    
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15%;
+        
+    }
+    
+    .header-content .a{
+        display: inline-block; /* Limita el área clickeable solo al tamaño de la imagen */
+        text-decoration: none; /* Elimina el subrayado (aunque no es necesario para una imagen, es una buena práctica) */
+        
+    
+    }
+    
+    .logo {
+        width: 120px;
+        margin-left: 0px ;
+    }
+    
+    .nav-links a {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 0px;
+        text-decoration: none;
+        color: #333;
+        font-size: 0.9rem;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+        color: #3A7CA5 ;
+    }
+    
+    
+    /* Titulo */
+    
+    .titulo{
+        margin: 20px;
+        text-align: center;
+        
+    }
+    
+    .titulo h1{
+        font-size: 1.4rem;
+        color: #111;
+    }
+
+/* Footer */
+.footer-section {
+    background-color: #2F6690  ;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0 20px 0;
+    height: 100%;
+}
+
+footer .footer-pt1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.479);
+}
+
+.footer-pt1 .contacto{
+    text-align: center;
+    width: 100%;
+    
+}
+.footer-pt1 .contacto span{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.footer-pt1 .contacto i{
+    font-size: 1.4rem;
+    padding-right: 15px;
+}
+
+.footer-pt1 .contacto p{
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.footer-pt1 .contacto a{
+    text-decoration:underline;
+    color: white;
+}
+
+#redes a{
+    text-decoration: none;
+}
+
+.derechos{
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+}
