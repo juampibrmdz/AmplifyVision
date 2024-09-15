@@ -653,8 +653,8 @@ footer .footer-pt1{
 
 .hero-section .cta-button {
     border-radius: 30px;
-    padding: 10px 100px;
-    font-size: 1.3rem;
+    padding: 10px 30px;
+    font-size: 1.1rem;
     background-color: #2F6690;
 
 }
@@ -737,8 +737,7 @@ footer .footer-pt1{
 .about-section .cta-button{
     font-size: 1rem;
     border-radius: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px 20px;
 }
 
 /* Services Section */
@@ -802,8 +801,7 @@ footer .footer-pt1{
     margin-top: 20px;
     font-size: 1rem;
     border-radius: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px 14px;
 }
 
 .service-item .punto{
@@ -903,8 +901,7 @@ footer .footer-pt1{
 .contact-section .cta-button{
     font-size: 1rem;
     border-radius: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px 30px;
 }
 
 /* Footer */
@@ -961,4 +958,40 @@ footer .footer-pt1{
     margin-top: 20px;
     padding-bottom: 0px;
 }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .vsl-container {
+        height: 300px; /* Altura reducida para pantallas más pequeñas */
+    }
+
+    .custom-play-button {
+        width: 60px; /* Tamaño reducido del botón de play */
+        height: 60px;
+    }
+
+    .custom-play-button::before {
+        border-left: 15px solid white;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas, como móviles */
+@media (max-width: 480px) {
+    .vsl-container {
+        height: 200px; /* Altura aún más reducida para móviles */
+    }
+
+    .custom-play-button {
+        width: 50px; /* Tamaño aún más reducido del botón de play */
+        height: 50px;
+    }
+
+    .custom-play-button::before {
+        border-left: 12px solid white;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+    }
 }
